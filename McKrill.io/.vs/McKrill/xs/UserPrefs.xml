@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{98D6B143-A658-4424-9D33-6410FF614CA0}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="McKrill.io/Platforms/Android/Resources/values/colors.xml">
+    <Files>
+      <File FileName="McKrill.io/MainPage.xaml.cs" />
+      <File FileName="McKrill.io/MainPage.xaml" Line="43" Column="1" />
+      <File FileName="McKrill.io/Platforms/Android/Resources/values/colors.xml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="McKrill" expanded="True">
+            <Node name="McKrill.io" expanded="True">
+              <Node name="Platforms" expanded="True">
+                <Node name="Android" expanded="True">
+                  <Node name="Resources" expanded="True">
+                    <Node name="values" expanded="True">
+                      <Node name="colors.xml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.McKrill.io PreferredExecutionTarget="Android.pixel_5_-_api_33" />
+</Properties>
