@@ -2,41 +2,136 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="McKrill.io.MainPage">
+    <StackLayout Padding="20">
+        <Label Text="Temperature Information"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Margin="0,20,0,20"/>
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,10">
+            <Label Text="Water temperature outside the city: "
+                   FontSize="Medium"
+                   VerticalOptions="Center"/>
+            <Label Text="{Binding ExtWaterTemp}"
+                   FontSize="Medium"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"/>
+        </StackLayout>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,10">
+            <Label Text="Ambient temperature inside the city: "
+                   FontSize="Medium"
+                   VerticalOptions="Center"/>
+            <Label Text="{Binding IntTemp}"
+                   FontSize="Medium"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+        
+        <Button Text="Refresh"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnTemperatureRefreshClick" />
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+        <Label Text="Air Quality Information"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Margin="0,20,0,20"/>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,10">
+            <Label Text="Air Quality Index: "
+                   FontSize="Medium"
+                   VerticalOptions="Center"/>
+            <Label Text="{Binding AirQualityIndex}"
+                   FontSize="Medium"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+        
+        <Button Text="Refresh"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnAirRefreshClick" />
 
-        </VerticalStackLayout>
-    </ScrollView>
+        <Label Text="Power Level Information"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Margin="0,20,0,20"/>
 
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,10">
+            <Label Text="Puissance de la ville: "
+                   FontSize="Medium"
+                   VerticalOptions="Center"/>
+            <Label Text="{Binding PowerLevels}"
+                   FontSize="Medium"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+        
+        <Button Text="Refresh"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnPowerRefreshClick" />
+
+         <StackLayout Padding="20">
+        <Label Text="Transit"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Margin="0,20,0,20"/>
+        
+        <CollectionView ItemsSource="{Binding TransitList}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Vertical" Margin="0,0,0,10">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Line: "
+                                   FontSize="Medium"
+                                   VerticalOptions="Center"/>
+                            <Label Text="{Binding Line}"
+                                   FontSize="Medium"
+                                   VerticalOptions="Center"
+                                   FontAttributes="Bold"/>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Frequency: "
+                                   FontSize="Medium"
+                                   VerticalOptions="Center"/>
+                            <Label Text="{Binding Frequency}"
+                                   FontSize="Medium"
+                                   VerticalOptions="Center"
+                                   FontAttributes="Bold"/>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Description: "
+                                   FontSize="Medium"
+                                   VerticalOptions="Center"/>
+                            <Label Text="{Binding Description}"
+                                   FontSize="Medium"
+                                   VerticalOptions="Center"
+                                   FontAttributes="Bold"/>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Schedule: "
+                                   FontSize="Medium"
+                                   VerticalOptions="Center"/>
+                            <Label Text="{Binding Schedule}"
+                                   FontSize="Medium"
+                                   VerticalOptions="Center"
+                                   FontAttributes="Bold"/>
+                        </StackLayout>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+            <Button Text="Refresh"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnTransitRefreshClick" />
+    </StackLayout>
+    </StackLayout>
 </ContentPage>
-

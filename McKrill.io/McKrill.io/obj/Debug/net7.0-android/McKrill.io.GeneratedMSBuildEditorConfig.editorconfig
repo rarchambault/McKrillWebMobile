@@ -12,33 +12,33 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = McKrill.io
-build_property.ProjectDir = /Users/rarch/Desktop/CS Games 2023/McKrill.io/McKrill.io/
+build_property.ProjectDir = /Users/rarch/Desktop/CS Games 2023/McKrillWebMobile/McKrill.io/McKrill.io/
 
-[/Users/rarch/Desktop/CS Games 2023/McKrill.io/McKrill.io/App.xaml]
+[/Users/rarch/Desktop/CS Games 2023/McKrillWebMobile/McKrill.io/McKrill.io/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = McKrill.io.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[/Users/rarch/Desktop/CS Games 2023/McKrill.io/McKrill.io/AppShell.xaml]
+[/Users/rarch/Desktop/CS Games 2023/McKrillWebMobile/McKrill.io/McKrill.io/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = McKrill.io.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[/Users/rarch/Desktop/CS Games 2023/McKrill.io/McKrill.io/MainPage.xaml]
+[/Users/rarch/Desktop/CS Games 2023/McKrillWebMobile/McKrill.io/McKrill.io/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = McKrill.io.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[/Users/rarch/Desktop/CS Games 2023/McKrill.io/McKrill.io/Resources/Styles/Colors.xaml]
+[/Users/rarch/Desktop/CS Games 2023/McKrillWebMobile/McKrill.io/McKrill.io/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = McKrill.io.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
 
-[/Users/rarch/Desktop/CS Games 2023/McKrill.io/McKrill.io/Resources/Styles/Styles.xaml]
+[/Users/rarch/Desktop/CS Games 2023/McKrillWebMobile/McKrill.io/McKrill.io/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = McKrill.io.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
